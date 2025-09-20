@@ -16,7 +16,23 @@ def execute_intent(intent_data):
             module = importlib.import_module("actions.system")
             module.open_app(intent_data["slots"].get("app_name"))
 
+        elif intent_name == "add_task":
+            module = importlib.import_module("actions.tasks")
+            task_name = intent_data["slots"].get("task_name")
+            time = intent_data["slots"].get("time")
+            module.add_task(task_name, time)
+
+        elif intent_name == "list_tasks":
+            module = importlib.import_module("actions.tasks")
+            module.list_tasks()
+
+        elif intent_name == "remove_task":
+            module = importlib.import_module("actions.tasks")
+            task_name = intent_data["slots"].get("task_name")
+            module.remove_task(task_name)
+
         else:
             print(f"No executor found for intent: {intent_name}")
+
     except Exception as e:
         print(f"Error executing intent: {e}")
