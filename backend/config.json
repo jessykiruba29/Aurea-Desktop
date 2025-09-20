@@ -1,0 +1,18 @@
+{
+  "intents": [
+    {
+      "name": "open_url",
+      "description": "Open a website in the default browser",
+      "slots": ["url"]
+    },
+    {
+      "name": "scroll_down",
+      "description": "Scroll the current window down"
+    },
+    {
+      "name": "open_app",
+      "description": "Open a desktop application",
+      "slots": ["app_name"]
+    }
+  ]
+}
