@@ -1,5 +1,6 @@
 import importlib
 
+
 def execute_intent(intent_data):
     intent_name = intent_data["intent"]
 

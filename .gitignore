@@ -1,3 +1,4 @@
 /backend/intent_model/
 /backend/data.csv
 /backend/__pycache__/
+/actions/__pycache__/

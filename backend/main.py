@@ -1,6 +1,10 @@
 from stt import listen_to_speech
 from nlu import get_intent
 from executor import execute_intent
+import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 def main():
     print("Aurea listening. Say something...")
