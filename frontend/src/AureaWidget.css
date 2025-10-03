@@ -1,0 +1,82 @@
+.aurea-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+}
+
+/* Expanded Widget */
+.aurea-widget {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 16px;
+  width: 280px;
+}
+
+.aurea-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.aurea-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.aurea-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.aurea-body {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.aurea-speak-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #4f46e5; /* Indigo */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.aurea-speak-btn:hover {
+  background: #4338ca;
+}
+
+/* Floating Mic Button */
+.aurea-mic-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.aurea-mic-btn:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
